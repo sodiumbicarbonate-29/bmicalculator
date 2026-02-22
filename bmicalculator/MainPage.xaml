@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="bmicalculator.MainPage"
+             Title=""
+             BackgroundColor="#FBE8E2">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="0">
+
+            <!-- Header -->
+            <VerticalStackLayout BackgroundColor="#88C9C3" Padding="30,50,30,30" Spacing="4">
+                <Label Text="BMI Calculator"
+                       FontSize="26" FontAttributes="Bold"
+                       TextColor="White" HorizontalOptions="Center" />
+                <Label Text="Know your Body Mass Index"
+                       FontSize="13" TextColor="#E0F5F4"
+                       HorizontalOptions="Center" />
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Padding="24" Spacing="14">
+
+                <!-- Weight -->
+                <Border StrokeShape="RoundRectangle 12" Stroke="Transparent" BackgroundColor="White">
+                    <VerticalStackLayout Padding="16,12" Spacing="4">
+                        <Label Text="WEIGHT (kg)" FontSize="11" TextColor="#AF7478" FontAttributes="Bold" />
+                        <Entry x:Name="WeightEntry" Placeholder="e.g. 70"
+                               Keyboard="Numeric" FontSize="22" TextColor="#1a1a2e"
+                               PlaceholderColor="#ccc" />
+                    </VerticalStackLayout>
+                </Border>
+
+                <!-- Height -->
+                <Border StrokeShape="RoundRectangle 12" Stroke="Transparent" BackgroundColor="White">
+                    <VerticalStackLayout Padding="16,12" Spacing="4">
+                        <Label Text="HEIGHT (cm)" FontSize="11" TextColor="#AF7478" FontAttributes="Bold" />
+                        <Entry x:Name="HeightEntry" Placeholder="e.g. 175"
+                               Keyboard="Numeric" FontSize="22" TextColor="#1a1a2e"
+                               PlaceholderColor="#ccc" />
+                    </VerticalStackLayout>
+                </Border>
+
+                <!-- Button -->
+                <Button Text="Calculate"
+                        Clicked="OnCalculateClicked"
+                        BackgroundColor="#F6AFB3" TextColor="White"
+                        FontSize="16" FontAttributes="Bold"
+                        CornerRadius="12" HeightRequest="52"
+                        Margin="0,4,0,0" />
+
+                <!-- Error -->
+                <Label x:Name="ErrorLabel" TextColor="#AF7478"
+                       FontSize="13" HorizontalOptions="Center"
+                       IsVisible="False" />
+
+                <!-- Result -->
+                <Border x:Name="ResultFrame"
+                        StrokeShape="RoundRectangle 16"
+                        Stroke="Transparent" BackgroundColor="White"
+                        IsVisible="False">
+                    <VerticalStackLayout Padding="24,20" Spacing="6" HorizontalOptions="Center">
+                        <Label Text="YOUR BMI" FontSize="11" TextColor="#AF7478"
+                               FontAttributes="Bold" HorizontalOptions="Center" />
+                        <Label x:Name="BmiValueLabel" FontSize="56"
+                               FontAttributes="Bold" HorizontalOptions="Center" />
+                        <Label x:Name="CategoryLabel" FontSize="18"
+                               FontAttributes="Bold" HorizontalOptions="Center" />
+                        <BoxView HeightRequest="1" BackgroundColor="#F6AFB3" Margin="0,8" />
+                        <Label x:Name="AdviceLabel" FontSize="13" TextColor="#AF7478"
+                               HorizontalOptions="Center" HorizontalTextAlignment="Center" />
+                    </VerticalStackLayout>
+                </Border>
+
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
