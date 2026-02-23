@@ -42,7 +42,9 @@ public partial class MainPage : ContentPage
         < 18.5 => ("Underweight", Color.FromArgb("#2196F3"), "Consider a balanced diet to reach a healthy weight."),
         < 25.0 => ("Normal weight", Color.FromArgb("#4CAF50"), "Great! Maintain your healthy lifestyle."),
         < 30.0 => ("Overweight", Color.FromArgb("#FF9800"), "Consider regular exercise and a balanced diet."),
-        _      => ("Obese", Color.FromArgb("#F44336"), "Consult a healthcare provider for guidance.")
+        < 35.0 => ("Obese Class I", Color.FromArgb("#F44336"), "Moderate obesity - consider lifestyle changes and consult a healthcare provider."),
+        < 40.0 => ("Obese Class II", Color.FromArgb("#D32F2F"), "Severe obesity - medical consultation strongly recommended."),
+        _      => ("Obese Class III", Color.FromArgb("#B71C1C"), "Very severe obesity - please consult a healthcare provider immediately.")
     };
 
     private void ShowError(string message)

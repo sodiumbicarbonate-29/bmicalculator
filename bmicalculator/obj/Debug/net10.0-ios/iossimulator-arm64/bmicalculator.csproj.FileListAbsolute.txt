@@ -325,3 +325,4 @@
 /Users/dindomanondo/RiderProjects/bmicalculator/bmicalculator/obj/Debug/net10.0-ios/iossimulator-arm64/resizetizer/sp/splash_AD230C82D22F7559949A4DA68BBD97FD7D99B004643548969543F5EF01099EB9.png
 /Users/dindomanondo/RiderProjects/bmicalculator/bmicalculator/obj/Debug/net10.0-ios/iossimulator-arm64/resizetizer/sp/splash_AD230C82D22F7559949A4DA68BBD97FD7D99B004643548969543F5EF01099EB9@2x.png
 /Users/dindomanondo/RiderProjects/bmicalculator/bmicalculator/obj/Debug/net10.0-ios/iossimulator-arm64/resizetizer/sp/splash_AD230C82D22F7559949A4DA68BBD97FD7D99B004643548969543F5EF01099EB9@3x.png
+/Users/dindomanondo/RiderProjects/bmicalculator/bmicalculator/obj/Debug/net10.0-ios/iossimulator-arm64/bmicalculator.sourcelink.json
