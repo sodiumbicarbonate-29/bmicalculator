@@ -8,7 +8,6 @@
     <ScrollView>
         <VerticalStackLayout Spacing="0">
 
-            <!-- Header -->
             <VerticalStackLayout BackgroundColor="#88C9C3" Padding="30,50,30,30" Spacing="4">
                 <Label Text="BMI Calculator"
                        FontSize="26" FontAttributes="Bold"
@@ -20,7 +19,6 @@
 
             <VerticalStackLayout Padding="24" Spacing="14">
 
-                <!-- Weight -->
                 <Border StrokeShape="RoundRectangle 12" Stroke="Transparent" BackgroundColor="White">
                     <VerticalStackLayout Padding="16,12" Spacing="4">
                         <Label Text="WEIGHT (kg)" FontSize="11" TextColor="#AF7478" FontAttributes="Bold" />
@@ -30,7 +28,6 @@
                     </VerticalStackLayout>
                 </Border>
 
-                <!-- Height -->
                 <Border StrokeShape="RoundRectangle 12" Stroke="Transparent" BackgroundColor="White">
                     <VerticalStackLayout Padding="16,12" Spacing="4">
                         <Label Text="HEIGHT (cm)" FontSize="11" TextColor="#AF7478" FontAttributes="Bold" />
@@ -40,7 +37,6 @@
                     </VerticalStackLayout>
                 </Border>
 
-                <!-- Button -->
                 <Button Text="Calculate"
                         Clicked="OnCalculateClicked"
                         BackgroundColor="#F6AFB3" TextColor="White"
@@ -48,12 +44,10 @@
                         CornerRadius="12" HeightRequest="52"
                         Margin="0,4,0,0" />
 
-                <!-- Error -->
                 <Label x:Name="ErrorLabel" TextColor="#AF7478"
                        FontSize="13" HorizontalOptions="Center"
                        IsVisible="False" />
 
-                <!-- Result -->
                 <Border x:Name="ResultFrame"
                         StrokeShape="RoundRectangle 16"
                         Stroke="Transparent" BackgroundColor="White"
